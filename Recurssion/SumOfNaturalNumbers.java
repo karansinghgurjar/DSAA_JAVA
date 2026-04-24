@@ -1,6 +1,6 @@
 package Recurssion;
 
-public class R_5 {
+public class SumOfNaturalNumbers {
     public static void main(String[] args) {
         int num = 5 ;
         int sum = SumOfNaturalNumbers(num); 

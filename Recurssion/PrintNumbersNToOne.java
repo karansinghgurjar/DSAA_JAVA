@@ -1,6 +1,6 @@
 package Recurssion;
 
-public class R_4 {
+public class PrintNumbersNToOne {
     public static void main(String[] args) {
         int num = 10;
         printNum(num);

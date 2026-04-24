@@ -1,6 +1,6 @@
 package Recurssion;
 
-public class R_2 {
+public class PrintNameTenTimes {
     public static void main(String[] args) {
         String name = "karan";
         printName(name, 0);

@@ -1,6 +1,6 @@
 package Recurssion;
 
-public class R_1 {
+public class CountUpToTen {
     public static void main(String[] arg){
         int count = 0;
         countInc(count);
