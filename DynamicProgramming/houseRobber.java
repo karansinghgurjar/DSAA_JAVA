@@ -35,6 +35,24 @@ public class houseRobber {
         }
         return dp[nums.length - 1];
     }
+    public int spaceOptimization(int[] arr){
+        if(arr.length == 0) return 0;
+
+        int prev2 = 0;
+        int prev = arr[0];
+
+        for (int index = 1;index < arr.length;index++){
+            int rob = arr[index];
+            if(index > 1) rob += prev2;
+
+            int skip = prev;
+
+            int curr = Math.max(rob,skip);
+            prev2 = prev;
+            prev = curr;
+        }
+        return prev;
+    }
     public static void main(String[] args) {
         int[] nums = {2,7,9,3,1};
         int[] dp = new int[nums.length];
@@ -43,6 +61,7 @@ public class houseRobber {
         System.out.println(obj.recursion(nums, 0));
         System.out.println(obj.memoization(nums, 0,dp));
         System.out.println(obj.tabulation(nums));
+        System.out.println(obj.spaceOptimization(nums));
     }
     
 }
