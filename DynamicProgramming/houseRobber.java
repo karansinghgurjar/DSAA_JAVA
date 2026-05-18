@@ -42,6 +42,7 @@ public class houseRobber {
         houseRobber obj = new houseRobber();
         System.out.println(obj.recursion(nums, 0));
         System.out.println(obj.memoization(nums, 0,dp));
+        System.out.println(obj.tabulation(nums));
     }
     
 }
